@@ -1,6 +1,6 @@
     <div class="app-header header-shadow">
       <div class="app-header__logo">
-        <span style="font-weight: 600; font-size: 20px; color: #3f6ad8; position: relative; margin-top: -5px; margin-right: 10px;">SITOPIN</span>
+        <span style="font-weight: 600; font-size: 20px; color: #3f6ad8; position: relative; margin-top: -5px; margin-right: 10px;">SISTEM FORECASTING</span>
         <div class="header__pane ml-auto">
           <div>
             <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">

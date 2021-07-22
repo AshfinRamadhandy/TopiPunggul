@@ -7,8 +7,8 @@ class Dasbor extends CI_Controller {
 
 		date_default_timezone_set('Asia/Jakarta');
 		
-		$this->session->set_userdata('title', 'Dasbor');
-		$this->session->set_userdata('subtitle', 'Hai, selamat datang kembali.');
+		$this->session->set_userdata('title', 'Dashboard');
+		$this->session->set_userdata('subtitle', 'Hi, Selamat Datang Kembali.');
 
     // Check session
     if(!is_login()) {

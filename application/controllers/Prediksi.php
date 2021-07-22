@@ -78,10 +78,10 @@ class Prediksi extends CI_Controller {
 
       $parser['produk'] = $produk;
 
-      // Moving Average
+      
       if($ma_periode < 3) {
         $parser['ma_valid'] = false;
-        $parser['ma_message'] = "Periode untuk perhitungan Moving Average minimal 3 bulan.";
+        $parser['ma_message'] = "Periode untuk perhitungan Trend Moment minimal 2 tahun.";
       } else {
         $dataset = array();
         $sort_dataset = array();
@@ -133,28 +133,7 @@ class Prediksi extends CI_Controller {
             }
           }
 
-          $i = 1;
-          foreach($sort_dataset as $row) {
-            $ma_value = '&mdash;';
-
-            // Perhitungan: Moving average
-            if($i > $ma_periode) {
-              $temp_total = 0;
-
-              for($j=($i-2); $j>=($i-4); $j--) {
-                $temp_total += $sort_dataset[$j]['penjualan'];
-              }
-
-              $ma_value = round($temp_total / $ma_periode);
-            }
-            
-            $row['ma'] = $ma_value;
-            
-            // Semua data
-            array_push($result, $row);
-
-            $i++;
-          }
+          
 
           $chart_period = array();
           $chart_data_actual = array();

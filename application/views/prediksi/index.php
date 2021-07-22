@@ -56,7 +56,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       </div>
                     </div>
                     
-                    <h5 class="card-title">Moving Average</h5>
+                    <!-- <h5 class="card-title"></h5>
                     <div class="form-row">
                       <div class="col-md-6">
                         <div class="position-relative form-group">
@@ -64,7 +64,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                           <input type="number" name="ma_periode" class="form-control" min="3" value="3" step="1" required="required">
                         </div>
                       </div>
-                    </div>
+                    </div> -->
                     
                     <h5 class="card-title">Trend Moment</h5>
                     <div class="form-row">
